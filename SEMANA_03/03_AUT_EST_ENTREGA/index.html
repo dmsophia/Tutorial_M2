@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <title>Currículo</title>
 </head>
 <body>
@@ -25,8 +26,12 @@
             Inglês fluente pela WiseUp (2016-2019)</ul>
     </div> 
     <div class="box">
-        <h2>Habilidades</h2><button class="button" onclick="showSkills()"> <img src="angulo-pequeno-para-baixo.svg"></button>
-            <div class="hiddenSkillsContent">
+        <h2>Habilidades</h2>
+        <button id='down'>Slide Down</button>
+        <button id='up'>Slide Up</button>
+        <button id='toggle-sliding'>Toggle Sliding</button>
+        <img height="200" width="200" src='image.png'>
+        <div class="hiddenSkillsContent">
                 <ul>
                     <li>Gestão organizacional</li>
                     <li>Mentalidade ágil</li> 
