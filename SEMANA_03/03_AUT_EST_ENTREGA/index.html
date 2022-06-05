@@ -6,10 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script type="text/javascript">
+        var db = openDatabase("Meubanco", "2.0", "Mybase", 4048)
+        db.transaction(function(criar){
+            criar.executeSql("CREAT TABLE formacao(ensinoMedio TEXT, ensinoSuperior TEXT)");
+            criar.executeSql("CREAT TABLE idiomas(idioma1 TEXT, idioma2 TEXT)");
+            criar.executeSql("CREAT TABLE skills(skill1 TEXT, skill2 TEXT, skill3 TEXT, skill4 TEXT)");
+        });
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <title>Currículo</title>
 </head>
 <body>
+    <form>
+        <input type="text" id="ensinoMedio" placeholder="Ensino Médio"></br>
+        <input type="text" id="ensinoSuperior" placeholder="Ensino Superior"></br>
+    </form>
     <h1>Sophia Mello Dias</h1>
     <div class="box">
         <h2>Formação</h2>
