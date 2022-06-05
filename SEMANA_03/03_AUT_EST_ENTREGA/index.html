@@ -5,30 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Currículo</title>
 </head>
 <body>
     <h1>Sophia Mello Dias</h1>
     <div class="box">
         <h2>Formação</h2>
-            <p>Ensino médio completo
-            Colégio Objetivo Integrado, São Paulo, SP (2019-2021)
-           Graduação em Sistemas da Informação
-            Instituto de Tecnologia e Liderança (2022-presente)</p>
+            <ul>
+                <li>Ensino médio completo
+                    Colégio Objetivo Integrado, São Paulo, SP (2019-2021)</li>
+                    <li>Graduação em Sistemas da Informação
+                        Instituto de Tecnologia e Liderança (2022-presente)</li>
+            </ul>
     </div>  
     <div class="box">     
         <h2>Idiomas</h2>
-            <p>Português (nativo)
-            Inglês fluente pela WiseUp (2016-2019)</p>
+            <ul>Português (nativo)
+            Inglês fluente pela WiseUp (2016-2019)</ul>
     </div> 
     <div class="box">
-        <h2>Habilidades</h2>
-            <p>Organização clara, facilidade de comunicação, </p>
+        <h2>Habilidades</h2><button class="button" onclick="showSkills()"> <img src="angulo-pequeno-para-baixo.svg"></button>
+            <div class="hiddenSkillsContent">
+                <ul>
+                    <li>Gestão organizacional</li>
+                    <li>Mentalidade ágil</li> 
+                    <li>Flexibilidade</li>
+                    <li>Controle emocional</li>
+                </ul>
+            </div>
     </div>
     
   <footer>
       <ul class="footer ul ">
-       <li class="li"><a href = https://www.linkedin.com/in/sophia-dias-289536235/ target =_blank><img class="img" src="./linkedin.png">LinkeDin</a></li>
+       <li class="li"><a href = https://www.linkedin.com/in/sophia-dias target =_blank><img class="img" src="./linkedin.png">LinkeDin</a></li>
        <li class="li"><a href = https://github.com/dmsophia target = _blank><img src="./github.img" class="img">GitHub</a></li>
       </ul>
     </footer>
