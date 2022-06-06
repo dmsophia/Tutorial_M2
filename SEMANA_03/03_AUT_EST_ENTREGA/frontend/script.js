@@ -11,3 +11,4 @@ $('#down').click(function() {
     $('img').slideToggle('slow');
   })
 }
+
