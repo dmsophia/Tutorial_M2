@@ -15,14 +15,13 @@ app.get("/sophia-dias", (req,res)=>{
     res.setHeader('Acess-Control-Allom-Origin','*')
     var db = new sqlite3.Database(dbPath);
     var sql = 'SELECT * FROM graduacao ORDER BY title COLLATE NOCASE';
-	db.all(sql, [],  (err, rows ) => {
+	db.all(sql, [],  (err, rows ) =>{
 		if (err) {
 		    throw err;
-		}
+		})
 		res.json(rows);
 	});
 	db.close();
-});
 //C(creat)-CRUD
 app.post('/userinsert', urlencodedParser, (req, res) => {
 	res.statusCode = 200;
